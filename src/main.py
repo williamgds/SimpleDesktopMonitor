@@ -11,7 +11,7 @@ from Cfg import Config
 #Just initiates the startup of the file
 def init():
     hstnm = gethostname()
-    write_file("Desktop Usage Analytics -------- Startup for machine " + str(hstnm), Config.LOG_PATH)
+    write_file(Config.INIT_MSG + str(hstnm), Config.LOG_PATH)
     
 #Writes logs to the file
 def write_file(content, file):
