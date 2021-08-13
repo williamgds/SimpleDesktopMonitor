@@ -9,3 +9,4 @@ class Config:
     ABORTED_EXEC_MSG = "The user has aborted the execution."
     WINDOW_CHANGE_MSG = "Current window ---- "
     FINAL_INACTIVITY_MSG = "Total inactivity for the user: "
+    FINAL_MSG = "The program has been interrupted."

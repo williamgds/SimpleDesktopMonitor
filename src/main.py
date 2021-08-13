@@ -55,3 +55,5 @@ try:
 except KeyboardInterrupt:
     write_file(Config.ABORTED_EXEC_MSG, Config.LOG_PATH)
     write_file(Config.FINAL_INACTIVITY_MSG + str(timedelta(seconds=Config.TOTAL_IDLENESS)),Config.LOG_PATH)
+finally:
+    write_file(Config.FINAL_MSG + " " + Config.FINAL_INACTIVITY_MSG + str(timedelta(seconds=Config.TOTAL_IDLENESS)), Config.LOG_PATH))
